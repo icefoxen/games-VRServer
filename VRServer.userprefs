@@ -1,0 +1,29 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="VRServer/NetworkHandler.cs">
+    <Files>
+      <File FileName="VRLib/GameObj.cs" Line="144" Column="3" />
+      <File FileName="VRLib/Universe.cs" Line="249" Column="17" />
+      <File FileName="VRLib/UniverseGen.cs" Line="40" Column="16" />
+      <File FileName="VRServer/GameState.cs" Line="117" Column="28" />
+      <File FileName="VRLib/Serializer.cs" Line="90" Column="5" />
+      <File FileName="VRLib/Collision.cs" Line="63" Column="43" />
+      <File FileName="VRLib/MessageProto.cs" Line="21" Column="75" />
+      <File FileName="VRLib/Message.cs" Line="50" Column="25" />
+      <File FileName="VRServer/NetworkHandler.cs" Line="174" Column="30" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="VRLib" expanded="True" />
+          <Node name="VRServer" expanded="True" selected="True" />
+          <Node name="VRTestClient" expanded="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

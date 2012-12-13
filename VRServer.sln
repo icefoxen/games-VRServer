@@ -1,0 +1,56 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRLib", "VRLib\VRLib.csproj", "{27A02D52-92F3-4F18-BF24-787EBEC96B6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRServer", "VRServer\VRServer.csproj", "{B127A137-B999-4210-BBDC-461C139ACB2B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VRTestClient", "VRTestClient\VRTestClient.csproj", "{AC9D79CE-E45F-4B29-9FA5-8EAAF6DC1579}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{27A02D52-92F3-4F18-BF24-787EBEC96B6A}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{27A02D52-92F3-4F18-BF24-787EBEC96B6A}.Debug|x86.Build.0 = Debug|Any CPU
+		{27A02D52-92F3-4F18-BF24-787EBEC96B6A}.Release|x86.ActiveCfg = Release|Any CPU
+		{27A02D52-92F3-4F18-BF24-787EBEC96B6A}.Release|x86.Build.0 = Release|Any CPU
+		{AC9D79CE-E45F-4B29-9FA5-8EAAF6DC1579}.Debug|x86.ActiveCfg = Debug|x86
+		{AC9D79CE-E45F-4B29-9FA5-8EAAF6DC1579}.Debug|x86.Build.0 = Debug|x86
+		{AC9D79CE-E45F-4B29-9FA5-8EAAF6DC1579}.Release|x86.ActiveCfg = Release|x86
+		{AC9D79CE-E45F-4B29-9FA5-8EAAF6DC1579}.Release|x86.Build.0 = Release|x86
+		{B127A137-B999-4210-BBDC-461C139ACB2B}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B127A137-B999-4210-BBDC-461C139ACB2B}.Debug|x86.Build.0 = Debug|Any CPU
+		{B127A137-B999-4210-BBDC-461C139ACB2B}.Release|x86.ActiveCfg = Release|Any CPU
+		{B127A137-B999-4210-BBDC-461C139ACB2B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = VRServer\VRServer.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabWidth = 4
+		$1.EolMarker = Unix
+		$1.inheritsSet = Mono
+		$1.inheritsScope = text/plain
+		$1.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $2
+		$2.IndentSwitchBody = True
+		$2.IfElseBraceForcement = AddBraces
+		$2.ForBraceForcement = AddBraces
+		$2.ForEachBraceForcement = AddBraces
+		$2.WhileBraceForcement = AddBraces
+		$2.UsingBraceForcement = AddBraces
+		$2.FixedBraceForcement = AddBraces
+		$2.BeforeMethodDeclarationParentheses = False
+		$2.BeforeMethodCallParentheses = False
+		$2.BeforeConstructorDeclarationParentheses = False
+		$2.BeforeDelegateDeclarationParentheses = False
+		$2.NewParentheses = False
+		$2.inheritsSet = Mono
+		$2.inheritsScope = text/x-csharp
+		$2.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,62 @@
+using System;
+using System.Collections.Generic;
+using System.Net;
+using System.Net.Sockets;
+using System.Text;
+
+using MongoDB.Bson;
+using VRLib;
+
+namespace VRServer {
+    class VRServer      {
+
+        HashSet<ClientConnection> clients;
+
+        public static void Main (string[] args) {
+
+            ListenForConnections();
+        }
+
+        public static void ListenForConnections() {
+                        
+            var ug = new UniverseGen();
+            var p = ug.MakeRandomStarSystem(0);
+                        var msg = EncodeMessage.Place(p);
+                        Console.WriteLine(msg);
+
+                        var listener = new TcpListener(IPAddress.Any, 4444);
+                        listener.Start();
+                        while(true) {
+                                if(!listener.Pending()) {
+                                        //Console.WriteLine("No incoming requests");
+                                } else {
+                                        var client = listener.AcceptTcpClient();
+                                        var conn = new ClientConnection(client);
+                                        clients.Add(conn);
+                                        conn.DoHandshake();
+                                }
+                                foreach(var c in clients) {
+
+                                }
+
+                                        Console.WriteLine("Got incoming connection from {0} on port {1}", client.Client.RemoteEndPoint, 4444);
+                                        var stream = client.GetStream();
+                                        msg.WriteTo(stream);
+                                        stream.Flush();
+                                        Console.WriteLine("Wrote stuff.");
+                                        BsonDocument response;
+                                        try {
+                                                response = BsonDocument.ReadFrom(stream);
+                                        } catch (Exception e) {
+                                                Console.WriteLine("Read failed, screw it.");
+                                                continue;
+                                        }
+                                        //var response = BsonDocument.ReadFrom(stream);
+                                        Console.WriteLine("Got response: {0}", response);
+                                        client.Close();
+                                }
+                        }
+
+                }
+        }
+}
